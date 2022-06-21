@@ -4,175 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            font-size: 20px;
-            padding: 5rem;
-            justify-content: center;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
 
-        }
-
-        th,
-        td {
-            padding: 0.8rem;
-        }
-
-        .white {
-            background-color: white;
-        }
-
-        .yellow {
-            background-color: yellow;
-        }
-
-        .red {
-            background-color: red;
-        }
-
-        .black {
-            background-color: black;
-        }
-
-        .blue {
-            background-color: blue;
-        }
-
-        .white1 {
-            background-color: white;
-            height: 3.6rem;
-        }
-
-        .white2 {
-            background-color: white;
-            height: 7.2rem;
-        }
-
-        .white3 {
-            background-color: white;
-            height: 7.2rem;
-        }
-    </style>
 </head>
 
 <body>
-    <section>
-        <table border="1" cellspacing="0">
-            <tbody>
-                <tr>
-                    <td class="white" colspan="6" rowspan="3"></td>
-                    <td class="white" colspan="9" rowspan="3"></td>
-                    <td class="yellow" colspan="8" rowspan="3"></td>
-                    <td class="white1"></td>
-                </tr>
-                <tr>
-                </tr>
-                <tr>
-                </tr>
-                <tr>
-                    <td class="white" colspan="3" rowspan="6"></td>
-                    <td class="red" colspan="12" rowspan="12"></td>
-                    <td class="yellow" colspan="8" rowspan="6"></td>
-                    <td class="white2"></td>
-                </tr>
-                <tr>
+    <main>
+        <h1>Твій автомобіль</h1>
+        <hr>
+        <h2>Реєстрація</h2>
+        <form>
+            <p>
+                <label>
+                    <span>Імʼя</span><br>
+                    <span>
+                        <input type="text" name="firstname" />
+                    </span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <span>Прізвище</span><br>
+                    <input type="text" name="secondname" />
+                </label>
+            </p>
+            <p>
+                <label>
+                    <span>Номер телефону</span><br>
+                    <input type="tel">
+                </label>
+            </p>
+            <p>
+                <label>
+                    <span>Електронна пошта</span><br>
+                    <input type="email">
+                </label>
+            </p>
 
-                </tr>
-                <tr>
-
-                </tr>
-                <tr>
-
-                </tr>
-                <tr>
-
-                </tr>
-                <tr>
-
-                </tr>
-                <tr>
-                    <td class="white" colspan="3" rowspan="9"></td>
-                    <td class="white" colspan="4" rowspan="6"></td>
-                    <td class="white" colspan="4" rowspan="6"></td>
-                    <td class="white3"></td>
-                </tr>
-                <tr>
-
-                </tr>
-                <tr>
-
-                </tr>
-                <tr>
-
-                </tr>
-                <tr>
-
-                </tr>
-                <tr>
-
-                </tr>
-                <tr>
-                    <td class="black" colspan="6" rowspan="6"></td>
-                    <td class="white" colspan="6" rowspan="3"></td>
-                    <td class="white" colspan="8" rowspan="3"></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="yellow" colspan="3" rowspan="5"></td>
-                    <td class="white" colspan="6" rowspan="3"></td>
-                    <td class="blue" colspan="8" rowspan="5"></td>
-                    <td class="red2"></td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="white" colspan="6" rowspan="2"></td>
-                    <td class="black" colspan="6" rowspan="2"></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+            <p>
+                <label>
+                    <span>Створити пароль</span><br>
+                    <input type="password">
+                </label>
+            </p>
+            <p>
+                <label>
+                    <span>Підтвердити пароль</span><br>
+                    <input type="password">
+                </label>
+            </p>
+            <p>&nbsp;</p>
+            <p>
+                Реєструючись, ви погоджуєтеся з умовами положення про збір і захист персональних даних та угодою
+                користувача
+            </p>
+            <button type="submit">Зареєструватися</button>
+        </form>
+        <p>&nbsp;</p>
+        <a href="./autorization.html" target="_blank" rel="noopener noreferrer">Авторизація</a>&nbsp; &nbsp; &nbsp;
+        &nbsp;
+        <a href="./search.html" target="_blank" rel="noopener noreferrer">Пошук авто</a>
+    </main>
 </body>
 
 </html>

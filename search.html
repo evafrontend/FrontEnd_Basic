@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+
+</head>
+
+<body>
+    <main>
+        <h1>Твій автомобіль</h1>
+        <hr>
+        <h2>Пошук</h2>
+        <form>
+            <fieldset>
+                <legend>
+                    <h3>Загальна інформація</h3>
+                </legend>
+                <p>
+                    <span><strong>Тип кузова</strong></span><br>
+                    <label>
+                        <input type="checkbox" name="bodytype">
+                        Універсал
+                    </label>
+                    <label>
+                        <input type="checkbox" name="bodytype">
+                        Седан
+                    </label>
+                    <label>
+                        <input type="checkbox" name="bodytype">
+                        Хетчбек
+                    </label>
+                    <label>
+                        <input type="checkbox" name="bodytype">
+                        Позашляховик/Кросовер
+                    </label>
+                    <label>
+                        <input type="checkbox" name="bodytype">
+                        Купе
+                    </label>
+                    <label>
+                        <input type="checkbox" name="bodytype">
+                        Кабріолет
+                    </label>
+                    <label>
+                        <input type="checkbox" name="bodytype">
+                        Мінівен
+                    </label>
+                    <label>
+                        <input type="checkbox" name="bodytype">
+                        Пікап
+                    </label>
+                    <label>
+                        <input type="checkbox" name="bodytype">
+                        Лімузин
+                    </label>
+                    <label>
+                        <input type="checkbox" name="bodytype">
+                        Легковий фургон
+                    </label>
+                    <label>
+                        <input type="checkbox" name="bodytype">
+                        Ліфтбек
+                    </label>
+                    <label>
+                        <input type="checkbox" name="bodytype">
+                        Родстер
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span><strong>Країна-виробник</strong></span>
+                        <select id="selectist" name="country">
+                            <option value="0" selected disabled>Оберіть країну</option>
+                            <option value="germany">Німеччина</option>
+                            <option value="japan">Японія</option>
+                            <option value="france">Франція</option>
+                            <option value="usa">США</option>
+                            <option value="korea">Корея</option>
+                            <option value="checz">Чехія</option>
+                            <option value="china">Китай</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span><strong>Марка</strong></span>
+                        <select id="selectbrand" name="brand">
+                            <option value="0" selected disabled>Оберіть країну</option>
+                            <option value="Audi">Audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Chevrolet">Chevrolet</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Hyundai">Hyundai</option>
+                            <option value="Kia">Kia</option>
+                            <option value="Lexus">Lexus</option>
+                            <option value="Mazda">Mazda</option>
+                            <option value="Mercedes-Benz">Mercedes-Benz</option>
+                            <option value="Mitsubishi">Mitsubishi</option>
+                            <option value="Nissan">Nissan</option>
+                            <option value="Opel">Opel</option>
+                            <option value="Peugeot">Peugeot</option>
+                            <option value="Renault">Renault</option>
+                            <option value="Skoda">Skoda</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Volkswagen">Volkswagen</option>
+                            <option value="Volvo">Volvo</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span><strong>Рік випуску</strong></span>
+                        <select id="year_from" name="yearfrom">
+                            <option value="0" selected disabled>Рік, від</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                        </select>
+                        <select id="year_to" name="yearfrom">
+                            <option value="0" selected disabled>Рік, до</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <strong>Вартість, USD</strong><br>
+                        <input type="range" min="1000" max="1000000" step="500">
+                    </label>
+                </p>
+            </fieldset>
+            <p>&nbsp;</p>
+            <fieldset>
+                <legend>
+                    <h3>Стан</h3>
+                </legend>
+                <p>
+                    <label>
+                        <span><strong>Участь у ДТП</strong></span>
+                        <select id="select_сondition" name="condition">
+                            <option value="0" selected disabled>Не задано</option>
+                            <option value="dtp_yes">Був у ДТП</option>
+                            <option value="dtp_no">Не був у ДТП</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span><strong>Технічний стан</strong></span>
+                        <select id="select_techсondition" name="tech_condition">
+                            <option value="0" selected disabled>Не задано</option>
+                            <option value="condition_ex">Повністю непошкоджене</option>
+                            <option value="condition_good">Професійно відремонтовані пошкодження</option>
+                            <option value="condition_sat">Не відремонтовані пошкодження</option>
+                            <option value="condition_bad">Не на ходу/На запчастини</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span><strong>Лакофарбове покриття</strong></span>
+                        <select id="select_cover" name="cover">
+                            <option value="0" selected disabled>Не задано</option>
+                            <option value="cover_ex">Як нове</option>
+                            <option value="cover_good">Професійно виправлені сліди використання</option>
+                            <option value="cover_bad">Невиправлені сліди використання</option>
+                        </select>
+                    </label>
+                </p>
+            </fieldset>
+            <p>&nbsp;</p>
+            <fieldset>
+                <legend>
+                    <h3>Технічні характеристики</h3>
+                </legend>
+                <p>
+                    <span><strong>Паливо</strong></span><br>
+                    <label>
+                        <input type="checkbox" name="fuel">
+                        Бензин
+                    </label>
+                    <label>
+                        <input type="checkbox" name="fuel">
+                        Дизель
+                    </label>
+                    <label>
+                        <input type="checkbox" name="fuel">
+                        Газ
+                    </label>
+                    <label>
+                        <input type="checkbox" name="fuel">
+                        Газ/Бензин
+                    </label>
+                    <label>
+                        <input type="checkbox" name="fuel">
+                        Гібрид
+                    </label>
+                    <label>
+                        <input type="checkbox" name="fuel">
+                        Електро
+                    </label>
+                    <label>
+                        <input type="checkbox" name="fuel">
+                        Газ-метан
+                    </label>
+                    <label>
+                        <input type="checkbox" name="fuel">
+                        Газ пропан-бутан
+                    </label>
+                </p>
+                <p>
+                    <span><strong>КПП</strong></span><br>
+                    <label>
+                        <input type="checkbox" name="checkpoint">
+                        Ручна/Механіка
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkpoint">
+                        Автомат
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkpoint">
+                        Типтронік
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkpoint">
+                        Робот
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkpoint">
+                        Варіатор
+                    </label>
+                </p>
+                <p>
+                    <span><strong>Матеріали салону</strong></span><br>
+                    <label>
+                        <input type="checkbox" name="interior">
+                        Тканина
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interior">
+                        Шкіра
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interior">
+                        Велюр
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interior">
+                        Комбінований
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interior">
+                        Штучна шкіра
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interior">
+                        Алькантара
+                    </label>
+                </p>
+                <p>
+                    <span><strong>Тип приводу</strong></span><br>
+                    <label>
+                        <input type="checkbox" name="driveunit">
+                        Повний
+                    </label>
+                    <label>
+                        <input type="checkbox" name="driveunit">
+                        Передній
+                    </label>
+                    <label>
+                        <input type="checkbox" name="driveunit">
+                        Задній
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span><strong>Колір</strong></span><br>
+                        <span>Колір 1</span>
+                        <input type="color">&nbsp;&nbsp;
+                        <span>Колір 2</span>
+                        <input type="color">&nbsp;&nbsp;
+                        <span>Колір 3</span>
+                        <input type="color">&nbsp;&nbsp;
+                        <span>Колір 4</span>
+                        <input type="color">&nbsp;&nbsp;
+                        <span>Колір 5</span>
+                        <input type="color">&nbsp;&nbsp;
+                    </label>
+                </p>
+            </fieldset>
+            <p>&nbsp;</p>
+            <button type="submit">Шукати</button>
+        </form>
+        <p>&nbsp;</p>
+        <a href="./index.html" target="_blank" rel="noopener noreferrer">Реєстрація</a>&nbsp; &nbsp; &nbsp;
+        <a href="./autorization.html" target="_blank" rel="noopener noreferrer">Авторизація</a>
+    </main>
+</body>
+
+</html>
