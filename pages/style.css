@@ -1,0 +1,39 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+.heading {
+    background-color: burlywood;
+    font-size: 20px;
+}
+
+h2.heading + p {
+    background-color: mediumslateblue;
+}
+.text {
+    background-color: cadetblue;
+}
+#paragraph {
+    background-color: darkgoldenrod;
+}   
+
+.article {
+    background-color: hotpink;
+}
+
+.text.paragraph {
+    background-color: darkolivegreen;
+}
+
+.text.paragraph.article {
+    background-color: lightcoral;
+}
+[href] {
+    background-color: tomato;
+}
+div > p {
+    background-color: darkgray;
+}
+div + p {
+    background-color: goldenrod;
+}
