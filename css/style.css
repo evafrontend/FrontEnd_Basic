@@ -15,8 +15,86 @@ a {
 
 html {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 1.7;
-    font-weight: 400;
+    font-size: 64px;
+    font-weight: 700;
+    color: #FFFFFF;
     font-style: normal;
+    text-align: center;
+}
+
+.wrapper {
+    background-color: #C4C4C4;
+    padding: 50px;
+}
+
+.container_1, .container_2, .container_3 {
+    width: 1000px;
+    height: 200px;
+    background-color: #E6E6E6;
+    margin: auto;
+}
+
+.box_1, .box_2, .box_3, .box_8, .box_9, .box_10, .box_11 {
+    width: 200px;
+    height: 200px;
+    background-color: #FC8F8F;
+    padding-top: 63px;
+}
+
+.box_4, .box_5, .box_6, .box_7 {
+    width: 100px;
+    height: 100px;
+    background-color: #FC8F8F;
+    padding-top: 31px;
+    font-size: 36px;
+}
+
+.box_1 {
+    float: left;
+}
+
+.box_2 {
+    float: right;
+}
+
+.box_3 {
+    float: left;
+}
+
+.box_4 {
+    float: right;
+    margin-left: 15px;
+}
+
+.box_5 {
+    float: right;
+    margin-left: 15px;
+}
+
+.box_6 {
+    float: right;
+    margin-left: 15px;
+}
+
+.box_7 {
+    float: right;
+    margin-left: 15px;
+}
+
+.box_8 {
+    float: left;
+    margin-right: 15px;
+}
+
+.box_9 {
+    float: left;
+}
+
+.box_10 {
+    float: right;
+    margin-left: 15px;
+}
+
+.box_11 {
+    float: right;
 }
