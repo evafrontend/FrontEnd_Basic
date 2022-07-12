@@ -5,19 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dropdown Menu</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./fonts/font.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header></header>
-    <main>
-        <a href="">HOME</a>
-        <a href="">PRODUCTS</a>
-        <a href="">ABOUT</a>
-        <a href="">CONTACT</a>
-    </main>
+    <header>
+        <div class="menu">
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>PRODUCTS
+                    <ul class="sub_menus">
+                        <li>Product 1</li>
+                        <li>Product 2
+                            <ul class="sub_sub_menu">
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ul>
+                        </li>
+                        <li>Product 3</li>
+                    </ul>
+                </li>
+                <li>SERVICES</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
+    </header>
+    <main></main>
     <footer></footer>
 </body>
 
